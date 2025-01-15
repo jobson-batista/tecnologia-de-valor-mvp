@@ -1,0 +1,21 @@
+body {
+    background-color: #F1F5F9 !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+.navbar {
+    background-color: #1E3A8A;
+}
+
+a {
+    color: #FFFFFF !important;
+    font-size: 1em !important;
+}
+
+.navbar a:hover {
+    color: #FFFFFF;
+}
+
+form {
+    justify-content: space-between;
+}
