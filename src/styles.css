@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --color-primary: #FFFFFF; /* Cinza Chumbo */
+    --color-secondary: #1C3A63; /* Azul Céu */
+    --color-neutral-light: #D3D3D3; /* Cinza Claro */
+    --color-background: #FAF0E6; /* Branco */
+
+    --p-menubar-background: #4A4A4A; /* Cor de fundo do Menubar */
+    --p-menubar-color: #FFFFFF; /* Cor do texto */
+    --p-menubar-hover-color: #87CEEB; /* Cor do texto ao passar o mouse */
+    
+}
+  

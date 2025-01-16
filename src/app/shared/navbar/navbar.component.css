@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+.title {
+    font-size: 1em;
+}
+
+.custom-menubar{
+    background-color: var(--p-menubar-background);
+}
