@@ -1,0 +1,30 @@
+.card {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 100%
+        /* background-color: #f7f7f7; */
+}
+
+.p-inputgroup {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+input {
+    margin-right: 1em;
+    width: 80%;
+}
+
+button {
+    width: 3em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    justify-self: center;
+}
