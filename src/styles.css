@@ -70,4 +70,5 @@ p {
     /* Fundo neutro */
     --border-color: #e0e0e0;
     /* Bordas sutis */
+    --p-carousel-indicator-active-background: #28a745 !important;
 }

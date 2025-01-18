@@ -9,80 +9,15 @@ section span,
 span {
     display: flex;
     justify-content: center;
-    font-size: 1.5em;
-}
-
-p-carousel {
-    background-color: var(--highlight-color);
-}
-
-.product-img {
-    width: 100%;
-    max-width: 20em;
-    height: auto;
-    object-fit: cover;
-}
-
-.image-container {
-    height: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.body-container {
-    padding: 0.5em;
-    margin: 0.5em;
-    background-color: var(--background-color);
-    border: 1px solid var(--border-color);
-    border-radius: 0.5em;
-}
-
-.body-container div {
-    text-align: start;
-    font-weight: lighter;
-    align-content: space-between;
-    margin-top: 0.25em;
-}
-
-.btn-area {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5em 1em 0.5em 1em;
-    /*Top, Right, Bottom, Left*/
+    font-size: 2em;
 }
 
 .card-list {
     width: 100%;
 }
 
-.pix-area {
-    background-color: rgba(34, 197, 94, 0.1);
-    color: var(--accent-color);
-    margin: 0.5em;
-    border: 1px solid;
-    border-radius: 0.5em;
-    display: flex;
-    align-items: center;
-}
-
-.pix-area svg {
-    margin: 0.5em;
-}
-
-.product-name {
-    height: 3em;
-}
-
-.credit-area {
-    display: flex;
-    align-items: center;
-}
-
-.credit-area p {
-    padding-left: 0.5em;
+.card {
+    margin-top: 2em;
 }
 
 .area-of-​​advantages {
@@ -103,9 +38,5 @@ p-carousel {
 @media (max-width: 768px) {
     .area-of-​​advantages {
         flex-direction: column;
-    }
-
-    .card-list {
-        height: 100%;
     }
 }
