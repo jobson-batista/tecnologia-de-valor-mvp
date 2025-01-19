@@ -1,1 +1,98 @@
-<div>footer-works!</div>
+<div class="container">
+    <div class="column">
+        <span>Categorias</span>
+        <p>Produtos</p>
+        <p>Quem Somos</p>
+        <p>Contato</p>
+        <p>Política de Garantia</p>
+    </div>
+    <div class="column">
+        <span>Central de Atentimento</span>
+        <div class="row phone">
+            <i class="pi pi-phone" style="margin-right: 0.5em;"></i>
+            <a target="_blank" style="color: var(--text-color); text-decoration: none;">(11) 3003-9999</a>
+        </div>
+        <div class="row">
+            <i class="pi pi-whatsapp" style="margin-right: 0.5em;"></i>
+            <a href="https://wa.me/5511999999999" target="_blank"
+                style="color: var(--text-color); text-decoration: none;">(11)
+                99999-9999</a>
+        </div>
+        <div class="row">
+            <i class="pi pi-envelope" style="margin-right: 0.5em;"></i>
+            <a href="mailto:contato@tecnologiadevalor.com" target="_blank"
+                style="color: var(--text-color); text-decoration: none;">{{emailContact}}</a>
+        </div>
+        <div class="row">
+            <i class="pi pi-clock" style="margin-right: 0.5em;"></i>
+            <a style="color: var(--text-color); text-decoration: none;">Atendimento: Seg a Sex das 08h30 às 17h30</a>
+        </div>
+
+    </div>
+    <div class="column">
+        <span>Formas de pagamento</span>
+        <div class="payment-methods">
+            <img width="51" height="32"
+                src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/visa-color.svg" alt="">
+            <img width="51" height="32"
+                src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/mastercard-color.svg" alt="">
+            <img width="51" height="32"
+                src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/americanexpress-color.svg" alt="">
+            <img width="51" height="32" src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/elo-color.svg"
+                alt="">
+            <img width="51" height="32"
+                src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/hipercard-color.svg" alt="">
+            <img width="51" height="32"
+                src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/hiper-color.svg" alt="">
+            <img width="51" height="32"
+                src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/diners-color.svg" alt="">
+            <img width="51" height="32"
+                src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/discover-color.svg" alt="">
+            <img width="51" height="32"
+                src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/aura-color.svg" alt="">
+            <img width="51" height="32"
+                src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/paypal-color.svg" alt="">
+            <img width="51" height="32"
+                src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/billet-color.svg" alt="">
+            <img width="51" height="32" src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/pix-color.svg"
+                alt="">
+        </div>
+    </div>
+    <div class="column">
+        <span>Receba novidades e promoções</span>
+        <div class="row-newsletter">
+            <p-inputgroup>
+                <p-inputgroup-addon>
+                    <i class="pi pi-user"></i>
+                </p-inputgroup-addon>
+                <input pInputText [(ngModel)]="nameUser" placeholder="Seu nome" required minlength="3"
+                    #nameModel="ngModel" />
+            </p-inputgroup>
+            <div *ngIf="nameModel.invalid && nameModel.touched" class="error">
+                <small *ngIf="nameModel.errors?.['required']">O nome é obrigatório.</small>
+                <small *ngIf="nameModel.errors?.['minlength']">O nome deve ter no mínimo 3 caracteres.</small>
+            </div>
+        </div>
+
+        <div class="row-newsletter">
+            <p-inputgroup>
+                <p-inputgroup-addon>
+                    <i class="pi pi-envelope"></i>
+                </p-inputgroup-addon>
+                <input pInputText [(ngModel)]="emailUser" placeholder="Seu Email" required email
+                    #emailModel="ngModel" />
+            </p-inputgroup>
+            <div *ngIf="emailModel.invalid && emailModel.touched" class="error">
+                <small *ngIf="emailModel.errors?.['required']">O email é obrigatório.</small>
+                <small *ngIf="emailModel.errors?.['email']">Informe um email válido.</small>
+            </div>
+        </div>
+        <p-toast />
+        <p-button label="Receber" (onClick)="registerEmailUser()"
+            [disabled]="nameModel.invalid || emailModel.invalid" />
+    </div>
+</div>
+<div class="cnpj">
+    <span>CNPJ: 00.000.000/0001-91 - Tecnologia de Valor I.S.</span>
+    <span>{{ currentYear }} - Todos os direitos reservados</span>
+</div>

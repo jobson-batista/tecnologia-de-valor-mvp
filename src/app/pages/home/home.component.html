@@ -1,2 +1,57 @@
-<p>home works!</p>
-<app-banner></app-banner>
+<div class="card container">
+    <app-search></app-search>
+    <p-divider />
+    <app-banner></app-banner>
+    <p-divider />
+
+    <div class="card area-of-​​advantages ">
+        <div class="item-area-of-​​advantages">
+            <img width="70" height="60"
+                src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/teste-comercial.webp">
+            <p><b>Parcele em Até 12x</b> <br />no Cartão de Crédito</p>
+        </div>
+        <div class="item-area-of-​​advantages">
+            <img width="70" height="60"
+                src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/barcore-copia-1.webp">
+            <p><b>Produtos Originais</b> <br />Procedência e Garantia</p>
+        </div>
+        <div class="item-area-of-​​advantages">
+            <img width="70" height="60" src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/truck.webp">
+            <p><b>Envio Imediato</b> <br />Via e-mail</p>
+        </div>
+        <div class="item-area-of-​​advantages">
+            <img width="70" height="60" src="https://centraldaslicencas.net.br/wp-content/uploads/2023/07/ssl.webp">
+            <p><b>Compra Segura</b> <br />Seus Dados Protegidos</p>
+        </div>
+    </div>
+
+    <p-divider />
+    <span>Mais Vendidos</span>
+    <!-- <p-divider /> -->
+    <section class="card-list">
+        <app-carousel-products [products]="products"></app-carousel-products>
+    </section>
+    <p-divider />
+
+    <section class="card">
+        <span>Windows</span>
+        <!-- <p-divider /> -->
+        <app-carousel-products [products]="products"></app-carousel-products>
+    </section>
+    <p-divider />
+    <section class="card">
+        <span>Pacote Office</span>
+        <!-- <p-divider /> -->
+        <app-carousel-products [products]="products"></app-carousel-products>
+    </section>
+    <p-divider />
+    <section class="card">
+        <span>Adobe</span>
+        <!-- <p-divider /> -->
+        <app-carousel-products [products]="products"></app-carousel-products>
+    </section>
+    <p-divider />
+    <!-- <p class="cnpj">Tecnologia de Valor | CNPJ: 00.000.000/0001-91</p>
+    <p-divider /> -->
+    <app-footer></app-footer>
+</div>

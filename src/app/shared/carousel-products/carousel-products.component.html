@@ -1,0 +1,34 @@
+<p-carousel showNavigators="true" [value]="products" [numVisible]="4" [numScroll]="1"
+    [responsiveOptions]="responsiveOptions" [circular]="true">
+    <ng-template let-product #item class="item-container">
+        <div class="body-container">
+            <img class="product-img" src="{{product.urlImage}}">
+            <div class="product-name">{{product.name}}</div>
+            <div><b>R$ {{product.price | numberFormat}}</b> no boleto</div>
+            <div class="credit-area">
+                <svg class="icon-inline mr-1 svg-icon-accent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                    width="15" height="15">
+                    <path fill="#343a40"
+                        d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zm-6 400H54.1c-3.3 0-6-2.7-6-6V86c0-3.3 2.7-6 6-6h467.8c3.3 0 6 2.7 6 6v340c0 3.3-2.7 6-6 6zM192 364v8c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v8c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z">
+                    </path>
+                </svg>
+                <p> Até 10x R$ <b>{{(product.price/10) | numberFormat }}</b> sem juros</p>
+            </div>
+            <div class="pix-area">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+                    <path fill="#22c55e"
+                        d="M242.4 292.5C247.8 287.1 257.1 287.1 262.5 292.5L339.5 369.5C353.7 383.7 372.6 391.5 392.6 391.5H407.7L310.6 488.6C280.3 518.1 231.1 518.1 200.8 488.6L103.3 391.2H112.6C132.6 391.2 151.5 383.4 165.7 369.2L242.4 292.5zM262.5 218.9C256.1 224.4 247.9 224.5 242.4 218.9L165.7 142.2C151.5 127.1 132.6 120.2 112.6 120.2H103.3L200.7 22.8C231.1-7.6 280.3-7.6 310.6 22.8L407.8 119.9H392.6C372.6 119.9 353.7 127.7 339.5 141.9L262.5 218.9zM112.6 142.7C126.4 142.7 139.1 148.3 149.7 158.1L226.4 234.8C233.6 241.1 243 245.6 252.5 245.6C261.9 245.6 271.3 241.1 278.5 234.8L355.5 157.8C365.3 148.1 378.8 142.5 392.6 142.5H430.3L488.6 200.8C518.9 231.1 518.9 280.3 488.6 310.6L430.3 368.9H392.6C378.8 368.9 365.3 363.3 355.5 353.5L278.5 276.5C264.6 262.6 240.3 262.6 226.4 276.6L149.7 353.2C139.1 363 126.4 368.6 112.6 368.6H80.8L22.8 310.6C-7.6 280.3-7.6 231.1 22.8 200.8L80.8 142.7H112.6z" />
+                </svg>
+                <p>À vista <b>R$ {{(product.price - (product.price*0.1)) |numberFormat }}</b> via PIX</p>
+                <p-tag [value]="'-10%'" [severity]="'warn'" class="top-right-tag" />
+            </div>
+            <div class="btn-area">
+                <p-button class="btn-card" label="Comprar" icon="pi pi-cart-plus" severity="info"
+                    [raised]="true"></p-button>
+                <p-button class="btn-card" label="Detalhes" icon="pi pi-info-circle" severity="contrast"
+                    [raised]="true"></p-button>
+            </div>
+        </div>
+
+    </ng-template>
+</p-carousel>

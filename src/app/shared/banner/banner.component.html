@@ -1,1 +1,13 @@
-<p>banner works!</p>
+<div class="card">
+    <p-galleria [value]="images"
+        [showThumbnails]="false" 
+        [showItemNavigators]="true" 
+        [circular]="true"
+        [responsiveOptions]="responsiveOptions" 
+        [numVisible]="5"
+        [autoPlay]="true">
+        <ng-template #item let-item>
+            <img [src]="item.itemImageSrc"/>
+        </ng-template>
+    </p-galleria>
+</div>

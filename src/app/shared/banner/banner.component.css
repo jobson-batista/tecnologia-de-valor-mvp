@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 900px;
+    justify-self: center;
+    object-fit: cover;
+}
+
+img {
+    height: 450px;
+    width: auto; 
+    object-fit: cover; 
+    image-rendering: auto;
+}
+
+@media (max-width: 768px) {
+    img {
+      height: 200px; /* Ajusta a altura para telas menores */
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        justify-self: center;
+    }
+  }
