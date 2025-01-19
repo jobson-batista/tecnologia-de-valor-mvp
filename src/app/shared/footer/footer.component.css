@@ -1,7 +1,38 @@
 .container {
-    margin-top: 5em;
     width: 100%;
-    height: 30em;
-    background-color: var(--primary-color);
     color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--text-color);
+}
+
+.column {
+    p {
+        line-height: 0.5em;
+        font-weight: lighter;
+    }
+
+    a {
+        font-weight: lighter;
+    }
+
+    span {
+        font-size: 1.125em;
+    }
+}
+
+.phone {
+    margin-top: 0.5em;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
 }

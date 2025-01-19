@@ -10,4 +10,6 @@ import { RouterLink } from '@angular/router';
 })
 export class FooterComponent {
 
+  emailContact: string = 'contato@tecnologiadevalor.com';
+
 }

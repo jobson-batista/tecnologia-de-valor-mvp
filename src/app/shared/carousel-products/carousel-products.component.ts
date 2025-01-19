@@ -30,12 +30,12 @@ export class CarouselProductsComponent {
     this.responsiveOptions = [
       {
         breakpoint: '1400px',
-        numVisible: 2,
+        numVisible: 3,
         numScroll: 1
       },
       {
         breakpoint: '1199px',
-        numVisible: 3,
+        numVisible: 2,
         numScroll: 1
       },
       {

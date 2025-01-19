@@ -5,11 +5,16 @@ app-search {
     align-items: center;
 }
 
+app-search {
+    margin-top: 1em;
+}
+
 section span,
 span {
     display: flex;
     justify-content: center;
-    font-size: 2em;
+    font-size: 2.625em;
+    margin-bottom: 0.5em;
 }
 
 .card-list {
@@ -17,7 +22,7 @@ span {
 }
 
 .card {
-    margin-top: 2em;
+    margin-top: 0em;
 }
 
 .area-of-​​advantages {
@@ -33,6 +38,12 @@ span {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.cnpj {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
 }
 
 @media (max-width: 768px) {
