@@ -5,9 +5,13 @@
     flex-direction: row;
     justify-content: space-between;
     color: var(--text-color);
+    margin-top: 2em;
 }
 
 .column {
+
+    width: 30%;
+
     p {
         line-height: 0.5em;
         font-weight: lighter;
@@ -15,15 +19,32 @@
 
     a {
         font-weight: lighter;
+        line-height: 1.5em;
     }
 
     span {
         font-size: 1.125em;
     }
+
+    input {
+        width: 100%;
+        font-family: "Ubuntu", serif;
+    }
 }
 
-.phone {
+.phone,
+.payment-methods {
     margin-top: 0.5em;
+}
+
+.row-newsletter {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    height: 3.625em;
+}
+
+.error {
+    color: red;
 }
 
 .row {
@@ -31,8 +52,22 @@
     align-items: center;
 }
 
+.cnpj {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 0.75em;
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 2em;
     }
 }
