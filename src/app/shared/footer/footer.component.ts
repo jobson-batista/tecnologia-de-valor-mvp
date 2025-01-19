@@ -45,7 +45,7 @@ export class FooterComponent {
   }
 
   registerEmailUser() {
-    this.messageService.add({ severity: 'success', summary: 'Obrigado por se inscrever!', detail: 'A partir de agora você receberá nossas novidades no seu e-mail.', life: 3000 })
+    this.messageService.add({ severity: 'success', summary: `Obrigado ${this.nameUser} por se inscrever!`, detail: 'A partir de agora você receberá nossas novidades no seu e-mail.', life: 3000 })
 
     this.emailUser = '';
     this.nameUser = '';

@@ -1,32 +1,46 @@
 <div class="container">
     <div class="column">
         <span>Categorias</span>
-        <p>Produtos</p>
-        <p>Quem Somos</p>
-        <p>Contato</p>
-        <p>Política de Garantia</p>
+        <div class="row category-products">
+            <a href=" row products category-products"
+                style="color: var(--text-color); text-decoration: none;">Produtos</a>
+        </div>
+        <div class="row">
+            <a href="about" style="color: var(--text-color); text-decoration: none;">Quem Somos</a>
+        </div>
+        <div class="row">
+            <a href="contacts" style="color: var(--text-color); text-decoration: none;">Contato</a>
+        </div>
+        <div class="row">
+            <a href="warranty-policy" style="color: var(--text-color); text-decoration: none;">Política de Garantia</a>
+        </div>
     </div>
     <div class="column">
-        <span>Central de Atentimento</span>
-        <div class="row phone">
+        <span>Central de Atendimento</span>
+
+        <a class="row phone" href="tel:1130039999" target="_blank"
+            style="color: var(--text-color); text-decoration: none;">
             <i class="pi pi-phone" style="margin-right: 0.5em;"></i>
-            <a target="_blank" style="color: var(--text-color); text-decoration: none;">(11) 3003-9999</a>
-        </div>
-        <div class="row">
-            <i class="pi pi-whatsapp" style="margin-right: 0.5em;"></i>
-            <a href="https://wa.me/5511999999999" target="_blank"
-                style="color: var(--text-color); text-decoration: none;">(11)
-                99999-9999</a>
-        </div>
-        <div class="row">
+            <span>(11) 3003-9999</span>
+        </a>
+
+        <a class="row" href="https://wa.me/5511999999999" target="_blank"
+            style="color: var(--text-color); text-decoration: none;">
+            <i class="pi pi-phone" style="margin-right: 0.5em;"></i>
+            <span>(11) 99999-9999</span>
+        </a>
+
+        <a class="row" href="mailto:contato@tecnologiadevalor.com" target="_blank"
+            style="color: var(--text-color); text-decoration: none;">
             <i class="pi pi-envelope" style="margin-right: 0.5em;"></i>
-            <a href="mailto:contato@tecnologiadevalor.com" target="_blank"
-                style="color: var(--text-color); text-decoration: none;">{{emailContact}}</a>
-        </div>
-        <div class="row">
+            <span>{{emailContact}}</span>
+        </a>
+
+        <a class="row" href="mailto:contato@tecnologiadevalor.com" target="_blank"
+            style="color: var(--text-color); text-decoration: none;">
             <i class="pi pi-clock" style="margin-right: 0.5em;"></i>
-            <a style="color: var(--text-color); text-decoration: none;">Atendimento: Seg a Sex das 08h30 às 17h30</a>
-        </div>
+            <span>Atendimento: Seg a Sex das 08h30 às 17h30</span>
+        </a>
 
     </div>
     <div class="column">

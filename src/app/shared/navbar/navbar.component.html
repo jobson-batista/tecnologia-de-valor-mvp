@@ -1,17 +1,25 @@
 <div class="card">
     <p-menubar [model]="items" styleClass="custom-menubar">
-        
+
         <ng-template #start>
             <a [routerLink]="'/'" pRipple class="flex items-center p-menubar-item-link">
                 <svg width="33" height="35">
-                    <image href="favicon.png" width="33" height="35"/>
+                    <image href="favicon.png" width="33" height="35" />
                 </svg>
-                <span class="title">Tecnologia <br/>de Valor</span>
+                <!-- <span class="title">Tecnologia <br />de Valor</span> -->
             </a>
         </ng-template>
 
         <ng-template #item let-item let-root="root">
-            <a [routerLink]="item.route" pRipple class="flex items-center p-menubar-item-link" [ngStyle]="{'color': 'var(--color-secondary)'}">
+            <a [routerLink]="item.route" pRipple class="flex items-center p-menubar-item-link"
+                [ngStyle]="{'color': 'var(--color-secondary)'}">
+                <span>{{ item.label }}</span>
+            </a>
+        </ng-template>
+
+        <ng-template #item let-item let-root="root">
+            <a [routerLink]="item.route" pRipple class="flex items-center p-menubar-item-link"
+                [ngStyle]="{'color': 'var(--color-secondary)'}">
                 <span>{{ item.label }}</span>
             </a>
         </ng-template>
@@ -19,14 +27,13 @@
         <ng-template #end>
             <div class="p-menubar-item-link">
                 <a [routerLink]="'/cart'" class="flex items-center p-menubar-item-link">
-                    <span class="pi pi-shopping-cart" style="font-size: 1.5em"></span>
-                    <!-- <input type="text" pInputText placeholder="Buscar licença" class="w-36" /> -->
+                    <span class="pi pi-shopping-cart"></span>
                 </a>
                 <a *ngIf="!logged" [routerLink]="'/'" class="flex items-center p-menubar-item-link">
-                    <span class="pi pi-sign-in" style="font-size: 1.5em"></span>
+                    <span class="pi pi-sign-in"></span>
                 </a>
                 <a *ngIf="logged" [routerLink]="'/'" class="flex items-center p-menubar-item-link">
-                    <span class="pi pi-sign-out" style="font-size: 1.5em"></span>
+                    <span class="pi pi-sign-out"></span>
                 </a>
             </div>
         </ng-template>
