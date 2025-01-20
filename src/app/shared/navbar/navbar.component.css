@@ -1,9 +1,10 @@
-.title {
-    font-size: 1em;
+.card {
+    color: var(--text-color)
 }
 
-.custom-menubar {
-    background-color: var(--p-menubar-background);
+.title {
+    font-size: 1em;
+    color: var(--text-color);
 }
 
 .pi {
@@ -18,4 +19,15 @@
     .pi {
         font-size: 1em;
     }
+}
+
+:host {
+    --p-menubar-background: var(--primary-color);
+    --p-menubar-submenu-background: var(--primary-color);
+    --p-menubar-item-focus-background: var(--hover-item-navbar-color);
+    --p-menubar-mobile-button-hover-background: var(--hover-item-navbar-color);
+    --text-color: #FFF;
+    --p-menubar-color: #FFFFFF;
+    --p-menubar-item-color: #1A2B3C;
+    --p-menubar-item-focus-color: #FFFF;
 }

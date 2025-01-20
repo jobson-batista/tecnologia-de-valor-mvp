@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 body {
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-    font-family: "Ubuntu", serif;
+    font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
@@ -58,19 +59,13 @@ p {
 }
 
 :root {
-    --primary-color: #007bff;
-    /* Azul - Confiabilidade, segurança */
-    --secondary-color: #6c757d;
-    /* Cinza - Neutralidade */
-    --accent-color: #28a745;
-    /* Verde - Crescimento, segurança */
+    --primary-color: #A0C4FF;
+    --secondary-color: #F0F0F0;
+    --accent-color: #333333;
     --highlight-color: #ffc107;
-    /* Amarelo - Para chamar atenção em CTAs */
     --text-color: #343a40;
-    /* Texto principal */
-    --background-color: #f8f9fa;
-    /* Fundo neutro */
+    --background-color: #FFFFFF;
     --border-color: #e0e0e0;
-    /* Bordas sutis */
-    --p-carousel-indicator-active-background: #28a745 !important;
+    --hover-item-navbar-color: #b8d1f9;
+
 }

@@ -19,6 +19,8 @@ input {
 
 button {
     width: 3em;
+    background-color: var(--primary-color) !important;
+    color: var(--accent-color);
 }
 
 .card {

@@ -23,10 +23,11 @@
                 <p-tag [value]="'-10%'" [severity]="'warn'" class="top-right-tag" />
             </div>
             <div class="btn-area">
-                <p-button class="btn-card" label="Comprar" icon="pi pi-cart-plus" severity="info"
-                    [raised]="true"></p-button>
-                <p-button class="btn-card" label="Detalhes" icon="pi pi-info-circle" severity="contrast"
-                    [raised]="true"></p-button>
+                <p-button class="btn-card" label="Comprar" icon="pi pi-cart-plus" [raised]="true"
+                    [severity]="'primary'"></p-button>
+                <!-- <button class="btn-card"><i class="pi pi-info-circle"></i>Detalhes</button> -->
+                <p-button class="btn-card" label="Detalhes" icon="pi pi-info-circle" [raised]="true"
+                    [severity]="'secondary'"></p-button>
             </div>
         </div>
 

@@ -8,7 +8,7 @@
 
 .body-container div {
     text-align: start;
-    font-weight: lighter;
+    font-weight: 200;
     align-content: space-between;
     margin-top: 0.25em;
     padding-left: 0.5em;
@@ -26,6 +26,10 @@
     justify-content: space-between;
     padding: 0.5em 1em 0.5em 1em;
     /*Top, Right, Bottom, Left*/
+}
+
+.btn-card {
+    /* background-color: blueviolet; */
 }
 
 .pix-area {
@@ -63,4 +67,12 @@
 
 .credit-area p {
     padding-left: 0.5em;
+}
+
+:host {
+    --p-button-primary-background: var(--background-color);
+    --p-button-primary-color: var(--accent-color);
+    --p-button-secondary-background: var(--highlight-color);
+    --p-button-secondary-border-color: var();
+    --p-carousel-indicator-active-background: var(--primary-color);
 }
