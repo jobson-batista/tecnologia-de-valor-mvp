@@ -2,26 +2,30 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 900px;
+    height: 100%;
     justify-self: center;
     object-fit: cover;
 }
 
 img {
     height: 450px;
-    width: auto; 
-    object-fit: cover; 
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
     image-rendering: auto;
+    object-fit: contain;
 }
 
 @media (max-width: 768px) {
     img {
-      height: 200px; /* Ajusta a altura para telas menores */
+        width: 100%;
+        /* Ajusta a altura para telas menores */
     }
+
     .card {
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 100%;
         justify-self: center;
     }
-  }
+}

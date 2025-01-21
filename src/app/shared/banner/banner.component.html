@@ -1,13 +1,9 @@
 <div class="card">
-    <p-galleria [value]="images"
-        [showThumbnails]="false" 
-        [showItemNavigators]="true" 
-        [circular]="true"
-        [responsiveOptions]="responsiveOptions" 
-        [numVisible]="5"
-        [autoPlay]="true">
+    <p-galleria [value]="isSmallScreen ? imagesSmall : imagesLarge" [showThumbnails]="false" [showItemNavigators]="true"
+        [circular]="true" [responsiveOptions]="responsiveOptions" [numVisible]="5" [autoPlay]="true"
+        [transitionInterval]="5000">
         <ng-template #item let-item>
-            <img [src]="item.itemImageSrc"/>
+            <img [src]="item.itemImageSrc" />
         </ng-template>
     </p-galleria>
 </div>

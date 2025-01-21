@@ -19,8 +19,7 @@ input {
 
 button {
     width: 3em;
-    background-color: var(--primary-color) !important;
-    color: var(--accent-color);
+    background-color: var(--primary-color);
 }
 
 .card {
@@ -29,4 +28,13 @@ button {
     justify-content: center;
     width: 600px;
     justify-self: center;
+}
+
+:host {
+    --p-inputtext-focus-border-color: var(--primary-color);
+    --p-button-primary-hover-border-color: var(--primary-color);
+    --p-button-primary-active-border-color: #FFF;
+    --p-button-primary-border-color: var(--primary-color);
+    --p-button-primary-hover-background: var(--primary-color);
+    --p-button-primary-active-background: var(--blue-color)
 }

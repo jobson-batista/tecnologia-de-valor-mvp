@@ -59,13 +59,12 @@ p {
 }
 
 :root {
-    --primary-color: #A0C4FF;
+    --primary-color: #046cb8;
     --secondary-color: #F0F0F0;
+    --blue-color: #94c1ff;
     --accent-color: #333333;
     --highlight-color: #ffc107;
     --text-color: #343a40;
     --background-color: #FFFFFF;
     --border-color: #e0e0e0;
-    --hover-item-navbar-color: #b8d1f9;
-
 }

@@ -5,6 +5,8 @@
 .title {
     font-size: 1em;
     color: var(--text-color);
+    font-family: "Ubuntu", serif;
+    font-weight: 200;
 }
 
 .pi {
@@ -28,6 +30,8 @@
     --p-menubar-mobile-button-hover-background: var(--hover-item-navbar-color);
     --text-color: #FFF;
     --p-menubar-color: #FFFFFF;
-    --p-menubar-item-color: #1A2B3C;
+    --p-menubar-item-color: var(--text-color);
     --p-menubar-item-focus-color: #FFFF;
+    --p-menubar-mobile-button-color: var(--text-color);
+    --hover-item-navbar-color: #94c1ff;
 }

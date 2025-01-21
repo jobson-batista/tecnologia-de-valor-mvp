@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { GalleriaModule } from 'primeng/galleria';
-import {model} from '@angular/core';
+import { model } from '@angular/core';
 
 @Component({
   selector: 'app-banner',
@@ -10,49 +10,71 @@ import {model} from '@angular/core';
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.css'
 })
-export class BannerComponent implements OnInit{
+export class BannerComponent implements OnInit {
 
-  images: any[] = [];
+  imagesSmall: any[] = [];
+  imagesLarge: any[] = [];
+
+  isSmallScreen = false;
 
   responsiveOptions: any[] = [
-      {
-          breakpoint: '1300px',
-          numVisible: 4
-      },
-      {
-          breakpoint: '575px',
-          numVisible: 1
-      }
+    {
+      breakpoint: '1300px',
+      numVisible: 4
+    },
+    {
+      breakpoint: '575px',
+      numVisible: 1
+    }
   ];
 
   constructor() {
 
   }
-  
+
   ngOnInit() {
-    this.images = this.getImages();
-    console.log(this.images);
+    this.getImages();
+    console.log(this.imagesLarge);
+    console.log(this.imagesSmall);
   }
 
   getImages() {
-    return [
+    this.imagesSmall = [{
+      itemImageSrc: 'banner/banner_mobile_1.png',
+      thumbnailImageSrc: 'banner/adobe-creative.jpg',
+      alt: 'Description for Image 1',
+      title: 'Title 1'
+    },
+    {
+      itemImageSrc: 'banner/banner_mobile_2.png',
+      thumbnailImageSrc: 'banner/capa.webp',
+      alt: 'Description for Image 1',
+      title: 'Title 1'
+    }]
+
+    this.imagesLarge = [
       {
-        itemImageSrc: 'banner/adobe-creative.jpg',
+        itemImageSrc: 'banner/Tecnologia_de_Valor_Licencas_de_Windows_Office_1.png',
         thumbnailImageSrc: 'banner/adobe-creative.jpg',
         alt: 'Description for Image 1',
         title: 'Title 1'
       },
       {
-        itemImageSrc: 'banner/capa.webp',
+        itemImageSrc: 'banner/Tecnologia_de_Valor_Licencas_de_Windows_Office_2.png',
         thumbnailImageSrc: 'banner/capa.webp',
         alt: 'Description for Image 1',
         title: 'Title 1'
       }
     ]
+
   }
 
-  handleValueChange(newValue: any): void {
-    this.images = newValue; // Ou o que quer que precise ser feito com o novo valor
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.checkScreenSize();
   }
 
+  checkScreenSize() {
+    this.isSmallScreen = window.innerWidth <= 950;
+  }
 }
